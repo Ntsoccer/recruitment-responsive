@@ -1,0 +1,272 @@
+header{
+    height: 72px;
+    background:#0de9e9e3;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+#profile,
+#vision,
+#sns,
+#achivement,
+#contact{
+    margin-top:-10px;
+    padding-top:10px;
+}
+img{
+    object-fit: cover;
+}
+.drawer-container{
+    display: none;
+}
+.main-nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+.main-nav a{
+    text-decoration: none;
+}
+.main-nav li{
+    list-style: none;
+    font-size: 3rem;
+}
+.main-nav li:not(:last-child){
+    border-right: #ffffff 1px solid;
+    padding-right:50px;
+}
+.main-nav a{
+    color: #ffffff;
+}
+
+.main-image{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+  }
+  
+  .main-image h1{
+      position:absolute;
+      margin:0 auto;
+      color:#ffffff;
+      font-size:3rem;
+      font-weight:700;
+  }
+
+.title{
+    font-size: 4rem;
+    margin-top: 100px;
+}
+.border{
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#profile .border{
+    width: 210px;
+}
+.profile-content{
+    display: flex;
+    justify-content: space-around;
+}
+.profile-text{
+    text-align: justify;
+    width: 30%;
+    line-height: 30px;
+}
+#vision .border{
+    width: 210px;
+}
+.vision-content{
+    display: flex;
+    justify-content: space-around;
+}
+.vision-text{
+    width: 30%;
+    text-align: justify;
+    line-height: 30px;
+}
+
+#sns .border{
+    width: 130px;
+}
+.twitter{
+    text-align:center;
+}
+
+#achivement .border{
+    width: 400px;
+}
+.achivement-items{
+    display: flex;
+    justify-content: space-around;
+}
+.achivement-item img{
+    height: 250px;   
+}
+.achivement-item img:hover{
+    opacity: 0.7;
+}
+#contact{
+    margin-bottom:50px;
+}
+#contact .border{
+    width: 250px;
+}
+.formpage ul{
+    list-style: none;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+    border:solid 1px;
+    padding:10px;
+}
+label[for="mail"]{
+    margin-left:16px;
+}
+label[for="message"]{
+    position:relative;
+    top:-120px;
+}
+.mail,.message{
+    margin-top:30px;
+}
+textarea{
+    width:300px;
+}
+input[type="email"]{
+    width:300px;
+}
+.button{
+    border: outset 1px;
+    padding:5px;
+    width:100px;
+    background-color:#00bcddfa;
+}
+.button:hover{
+    background-color:#0090aa;
+}
+footer{
+    background-color:#443322fb;
+    padding:20px 0;
+}
+footer p{
+    color:#ffffff;
+    font-size: 1.125rem;
+}
+.icon i{
+    margin-right: 10px;
+}
+
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2px;
+    bottom: 2px;
+    background: #ff7300f3;
+    opacity: 0.6;
+    border-radius: 50%;
+    }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f062';
+    font-size: 25px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -10px;
+    bottom: 0;
+    right: 0px;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 959px){
+    .main-nav{
+      display:none;
+    }
+    .drawer-container{
+      display:block;
+    }
+    .main-image img{
+      height:600px;
+    }
+    .main-image h1{
+      font-size:1.9rem;
+    }
+     
+  }
+  @media screen and (max-width: 559px){
+    .title{
+        font-size:3rem;
+      }
+    #profile .border,
+    #vision .border,
+    #contact .border{
+      width:180px;
+    }
+    #sns .border{
+        width:120px;
+      }
+      #achivement .border{
+        width:270px;
+      }
+    .main-image h1{
+        font-size:1.5rem;
+      }
+      .profile-content{
+        flex-direction:column
+      }
+      .profile-content img{
+        margin-bottom:20px;
+      }
+      .profile-text{
+        margin:0 auto;
+        width:80%
+      }
+      .vision-content{
+        flex-direction:column
+      }
+      .vision-content img{
+        width:100%;
+        margin-bottom:20px;
+      }
+      .vision-text{
+        margin:0 auto;
+        width:80%
+      }
+      .achivement-items{
+        flex-direction:column
+      }
+      .achivement-item{
+        margin-top:15px;
+      }
+      .formpage ul label{
+        display:flex;
+        flex-direction:column;
+        margin:0 auto;
+        margin-bottom:10px;
+      }
+      label[for="message"]{
+        position:static;
+      }
+      input[type="submit"]{
+        margin-top:15px;
+      }
+      #page_top{
+        display:none!important;
+      }
+  }
