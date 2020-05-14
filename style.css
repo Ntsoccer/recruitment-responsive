@@ -22,7 +22,6 @@ img{
 }
 .main-nav ul{
     display: flex;
-    justify-content: space-around;
 }
 .main-nav a{
     text-decoration: none;
@@ -30,10 +29,11 @@ img{
 .main-nav li{
     list-style: none;
     font-size: 3rem;
+    flex-grow: 1;
+    text-align: center;
 }
 .main-nav li:not(:last-child){
     border-right: #ffffff 1px solid;
-    padding-right:50px;
 }
 .main-nav a{
     color: #ffffff;
