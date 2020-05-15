@@ -200,6 +200,7 @@ footer p{
     }
     .drawer-container{
       display:block;
+      position: fixed;
     }
     .main-image img{
       height:600px;
