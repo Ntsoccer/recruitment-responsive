@@ -108,6 +108,11 @@ img{
 .achivement-item img:hover{
     opacity: 0.7;
 }
+.swiper-pagination,
+.swiper-button-prev,
+.swiper-button-next{
+  display: none;
+}
 #contact{
     margin-bottom:50px;
 }
@@ -169,6 +174,7 @@ footer p{
     background: #ff7300f3;
     opacity: 0.6;
     border-radius: 50%;
+    z-index: 100;
     }
   #page_top a{
     position: relative;
@@ -249,12 +255,13 @@ footer p{
         margin:0 auto;
         width:80%
       }
-      .achivement-items{
-        flex-direction:column
+      .swiper-pagination,
+      .swiper-button-prev,
+      .swiper-button-next{
+          display: block;
       }
-      .achivement-item{
-        margin-top:15px;
-      }
+
+
       .formpage ul label{
         display:flex;
         flex-direction:column;
