@@ -54,6 +54,7 @@ img{
       font-weight:700;
   }
 
+
 .title{
     font-size: 4rem;
     margin-top: 100px;
@@ -108,7 +109,6 @@ img{
 .achivement-item img:hover{
     opacity: 0.7;
 }
-.swiper-pagination,
 .swiper-button-prev,
 .swiper-button-next{
   display: none;
@@ -255,10 +255,13 @@ footer p{
         margin:0 auto;
         width:80%
       }
-      .swiper-pagination,
-      .swiper-button-prev,
-      .swiper-button-next{
-          display: block;
+      .swiper-custom-button{
+        display:block;
+        background-image: none!important;
+        color: white;
+        /* background-color: blue;
+        padding: 5px 30px 1px 15px;
+        border-radius:100px; */
       }
 
 

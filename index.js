@@ -96,3 +96,35 @@ $(function () {
         }
     });
 }); 
+
+//タイピング
+let message = 'ゆっくり見ていってください';
+let i = 0;
+function typing() {
+    if (i < message.length) {
+        document.getElementById("main-message").innerHTML += message.charAt(i);
+        i++;
+        setTimeout(typing,100); //setTimeout(ファンクション,待ち時間)
+    }
+}
+typing();
+
+//ソーシャルボタン
+const twitter = document.getElementById("twitter");
+const facebook = document.getElementById("facebook");
+
+twitter.addEventListener("mouseenter", () => {
+    twitter.classList.add("fa-3x");
+}, false);
+twitter.addEventListener("mouseleave", () => {
+    twitter.classList.remove("fa-3x")
+}, false);
+
+facebook.addEventListener("mouseenter", () => {
+    facebook.classList.add("fa-3x");
+}, false);
+facebook.addEventListener("mouseleave", () => {
+    facebook.classList.remove("fa-3x")
+}, false);
+
+
